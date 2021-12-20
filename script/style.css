@@ -1,0 +1,65 @@
+@font-face {
+    font-family: VT323;
+    src: url(VT323-Regular.woff2) format('woff2');
+}
+
+html {
+    user-select: none;
+    font-family: VT323, Arial, sans-serif;
+    font-size: 2vw;
+    color: white;
+    background-image: url(../img/background.png);
+    background-size: 100vw 100vh;
+}
+
+body {
+    overflow: hidden;
+    margin: 0;
+}
+
+#duck {
+    position: absolute;
+}
+
+#result {
+    position: relative;
+    font-size: 5vw;
+    font-weight: normal;
+    text-shadow: 2px 2px 5px black;
+}
+
+#movement_area {
+    cursor: url(../img/crosshair.png) 12.5 11.5, pointer;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scores {
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#new_game {
+    position: absolute;
+    bottom: 20px;
+}
+
+.column {
+    flex: 33.33%;
+    margin-inline: 2vw;
+    padding-inline: 0.4vw;
+    border: 2px solid greenyellow;
+    background-color: #1e1111;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}

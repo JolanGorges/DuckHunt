@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Duck Hunt</title>
+    <link href="script/style.css" rel="stylesheet"/>
+    <link href="#" rel="shortcut icon"/>
+</head>
+<body>
+<div id="movement_area">
+    <img alt="Canard" id="duck" src="img/duck1.gif"/>
+    <span id="result"></span>
+</div>
+<div id="scores">
+    <div class="column">
+        <span class="left">Temps restant :</span>
+        <span class="right" id="countdown_timer">2:00</span>
+    </div>
+    <div class="column">
+        <span class="left">Canard :</span>
+        <span class="right" id="duck_points">0</span>
+    </div>
+    <div class="column">
+        <span class="left">Chasseur :</span>
+        <span class="right" id="hunter">0</span>
+    </div>
+    <button id="new_game">Nouvelle partie</button>
+</div>
+<script src="script/game.js"></script>
+</body>
+</html>
